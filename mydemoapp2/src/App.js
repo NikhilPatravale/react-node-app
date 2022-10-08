@@ -4,7 +4,7 @@ function App() {
 
   let [users, setUsers] = useState([])
   useEffect(() => {
-    fetch('http://localhost:4041/users').then((res) => res.json()).then(data => {
+    fetch('http://3.6.94.188:81/users').then((res) => res.json()).then(data => {
       console.log(data)
       setUsers(data.users)
     })

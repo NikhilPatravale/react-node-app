@@ -1,0 +1,12 @@
+services:
+  frontend:
+    image: react-node-frontend
+    ports:
+      - published: 80
+        target: 3000
+
+  backend:
+    image: react-node-backend
+    ports:
+      - published: 81
+        target: 4041
